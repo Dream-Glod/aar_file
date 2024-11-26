@@ -6,6 +6,24 @@
     <artifactId>libaums</artifactId>
     <version>0.0.0001</version>
     <packaging>aar</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.simpligility.maven.plugins</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.1.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <encoding>utf8</encoding>
+                    <source>17</source>
+                    <target>17</target>
+                    <sign>
+                        <debug>false</debug>
+                    </sign>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>androidx.core</groupId>
